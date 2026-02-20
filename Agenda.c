@@ -20,16 +20,26 @@ int buscarNome(char nome[]);
 
 int main() {
 
-    
-    /*while(1){*/
+     
+    for(int i=0; i<1000;i++){
 
-    char resposta;
+    int opcao;
     printf("-------Bem vindo a sua Agenda De Contatos!-------\n");
     printf("Preencher contatos de Pessoa (1)\n");
     printf("Listar Pessoas (2)\n");
     printf("buscar nome de pessoas(3)\n");
 
-/*}*/
+    printf("Oque desejas fazer?");
+    scanf("%i", &opcao);
+
+    switch(opcao){
+        case 1:
+        printf("Qual o nome da pessoa desejas preencher os contatos?");
+        scanf("%s",lista_de_Pessoas[i].nome );
+
+    }
+
+}
     
 
 
