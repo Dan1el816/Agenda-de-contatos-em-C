@@ -1,0 +1,28 @@
+(PROJETO AINDA EM ANDAMENTO E EM DESENVOLVIMENTO)
+
+3. Agenda de Contatos Simples
+O que faz: Armazena contatos (nome, telefone, email) em um vetor de structs, com opções de adicionar, listar, buscar e remover.
+
+Conceitos usados:
+
+Struct.
+
+Vetor de structs.
+
+Strings.
+
+Funções para modularizar.
+
+Busca sequencial por nome.
+
+Pode usar ponteiros para remoção (deslocamento).
+
+Por que é bom para o GitHub: Projeto clássico de CRUD (Create, Read, Update, Delete) simples, base para muitos outros.
+
+Funcionalidades básicas:
+
+Adicionar contato (preencher struct).
+
+Listar todos.
+
+Buscar por nome (exibe se encontrar).
