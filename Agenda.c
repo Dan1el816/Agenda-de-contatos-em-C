@@ -33,10 +33,32 @@ int main() {
     scanf("%i", &opcao);
 
     switch(opcao){
-        case 1:
-        printf("Qual o nome da pessoa desejas preencher os contatos?");
-        scanf("%s",lista_de_Pessoas[i].nome );
+        case 1:{
+        contatos pessoa;
+       preencherContatos(&pessoa, i);
+       continuar();
+        break;
+        }
+        case 2:
+        listarPessoas();
+        continuar();
+        break;
 
+        
+        case 3:{
+    char nome[100];
+    printf("Qual nome desejas buscar?\n");
+    scanf("%s", nome);
+
+    if (buscarNome(nome)) {
+        printf("Nome encontrado!\n");
+    } else {
+        printf("Nome nao encontrado!\n");
+    }
+
+    continuar();
+    break;
+        }
     }
 
 }
@@ -52,7 +74,7 @@ void continuar() {
 
         char resposta;
 
-        printf("Desejas continuar? (Responda com 's' ou 'n'): ");
+        printf("Desejas continuar o programa? (Responda com 's' ou 'n'):\n ");
         scanf(" %c", &resposta);
 
         if (resposta == 's') {
@@ -71,13 +93,13 @@ void continuar() {
 
 void preencherContatos(contatos *pessoa, int numero_pessoa) {
 
-    printf("Qual seu nome?");
+    printf("Qual seu nome?\n");
     scanf("%s", (*pessoa).nome);
 
-    printf("Qual seu telefone? ");
+    printf("Qual seu telefone?\n ");
     scanf("%s", (*pessoa).telefone);
 
-    printf("Qual seu email? ");
+    printf("Qual seu email?\n ");
     scanf("%s", (*pessoa).email);
 
     printf("Contatos Preenchidos!\n");
